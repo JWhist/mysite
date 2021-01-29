@@ -1,2 +1,27 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+<div class='nav'>
+  <div class='nav-item'><%= link_to 'Home', home_path %></div>
+  <div class='nav-item'><%= link_to 'Projects', projects_path %></div>
+  <div class='nav-item'><%= link_to 'About', about_path %></div>
+  <div class='nav-item'><%= link_to 'Contact Me', contact_path %></div>
+</div>
+<div class='profile'>
+  <h1>Jordan Whistler</h1>
+  <p><%= image_tag 'Profilepic.png', id: 'profile-pic' %></p>
+  <p>This is a bunch of info that will talk about how awesome I am</p>
+</div>
+<div class='column-container'>
+  <div class='left-column'>
+    <div class='nav-item'>A</div>
+    <div class='nav-item'>B</div>
+    <div class='nav-item'>C</div>
+    <div class='nav-item'>D</div>
+    <div class='nav-item'>E</div>
+  </div>
+  <div class='right-column'>
+    <div class='nav-item'>A</div>
+    <div class='nav-item'>B</div>
+    <div class='nav-item'>C</div>
+    <div class='nav-item'>D</div>
+    <div class='nav-item'>E</div>
+  </div>
+</div>
