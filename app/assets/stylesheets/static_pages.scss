@@ -4,6 +4,16 @@ html {
   padding: 0;
   font-family: 'Poppins', sans-serif;
 }
+figcaption {
+  font-size: .85rem;
+  font-style: italic;
+}
+.chess-pic {
+  display: block;
+  width: 400px;
+  height: 350px;
+  margin: 0 auto;
+}
 .ico {
   width: 1.5rem;
   height: 1rem;
