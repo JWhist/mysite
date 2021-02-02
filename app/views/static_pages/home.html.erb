@@ -6,16 +6,16 @@
 </div>
 <div class='profile'>
   <div class='profile-pic-icons'>
-      <%= image_tag 'ruby.png', class: 'ico-lg' %>
-      <%= image_tag 'rails.png', class: 'ico-lg' %>
-      <%= image_tag 'postgres.png', class: 'ico-lg' %>
+    <%= image_tag 'ruby.png', class: 'ico-lg' %>
+    <%= image_tag 'rails.png', class: 'ico-lg' %>
+    <%= image_tag 'postgres.png', class: 'ico-lg' %>
     <figure>
       <%= image_tag 'Profilepic.png', id: 'profile-pic' %>
-      <figcaption>Jordan Whistler, New Bern, NC</figcaption>
+      <figcaption>Jordan Whistler</figcaption>
     </figure>
-      <%= image_tag 'node.png', class: 'ico-lg' %>
-      <%= image_tag 'git.png', class: 'ico-lg' %>
-      <%= image_tag 'trio.png', class: 'ico-lg trio' %>
+    <%= image_tag 'node.png', class: 'ico-lg' %>
+    <%= image_tag 'git.png', class: 'ico-lg' %>
+    <%= image_tag 'trio.png', class: 'ico-lg trio' %>
   </div>
 </div>
 <div class='column-container'>
@@ -35,14 +35,14 @@
     <div class='col-item'>
       <h3>Github</h3>
       <p>This currently contains a mixture of exercise solutions, code snippets, and mini projects that I've completed throughout the curriculum at Launch School.
-         <a href='https://github.com/JWhist' target='blank'>View my Github Profile</a>
+         <a href='https://github.com/JWhist' target='_blank'>View my Github Profile</a>
       </p>
     </div>
   </div>
 
   <div class='right-column'>
     <div class='col-item'>
-      <h3><a href='https://rubygems.org/gems/changer'>'Changer' RubyGem</a></h3>
+      <h3><a href='https://rubygems.org/gems/changer' target='_blank'>'Changer' RubyGem</a></h3>
       <p>A solo project I did over a few nights to brush up on my Ruby after working on Javascript and HTML/CSS for a month or so.  This is a small RubyGem that creates
          currency objects using an API to interact with ExchangeRatesAPI.  It can translate one currency to another, and do math directly between different currencies, 
          returning the result in the currency of the users choice, without the user having to handle looking up rates or formatting of the output.  It currently has over 1,000 downloads.</p>
@@ -50,17 +50,18 @@
 
     <div class='col-item'>
       <h3>Command-line Games</h3>
-      <h4><a href='https://github.com/JWhist/RB120/blob/master/Lesson%204/Hangman/hangman.rb'>Hangman</a></h4>
+      <h4><a href='https://github.com/JWhist/RB120/blob/master/Lesson%204/Hangman/hangman.rb' target='_blank'>Hangman</a></h4>
       <p>A command-line single player hangman game I made with another student at Launch School, to demonstrate our ability to write in object-oriented programming
          and read from external files.  This program uses the official Scrabble dictionary to select words, which the player then has a limited number of turns to guess
          before the man is hung!  The 'graphical' hanging man is achieved by using a yaml file containing various states of the hanging process which get loaded and displayed
          on each turn.</p>
-      <h4><a href='https://github.com/JWhist/RB120/blob/master/Lesson%205/oop_21.rb'>21</a></h4>
+      <h4><a href='https://github.com/JWhist/RB120/blob/master/Lesson%205/oop_21.rb' target='_blank'>21</a></h4>
       <p>A command-line poker game with imaginary wagering built in.</p>
-      <figure>
-        <%= image_tag 'play.png' %>
-        <figcaption>Abstracting away the details to provide clean, readable code for top-level operations</figcaption>
-      </figure>
     </div>
 
+    <div class='col-item'>
+      <figure><%= image_tag 'play.png', class:'play-pic' %>
+      <figcaption>Abstracting away the details to provide clean, readable code for top-level operations</figcaption></figure>
+    </div>
+  </div>
 </div>
