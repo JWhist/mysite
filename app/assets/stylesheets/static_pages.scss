@@ -4,6 +4,10 @@ html {
   padding: 0;
   font-family: 'Poppins', sans-serif;
 }
+body {
+  background-attachment: fixed;
+  background-image: url('wallpaper.png');
+}
 figure {
   box-sizing: border-box;
   margin: 0;
