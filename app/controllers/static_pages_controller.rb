@@ -5,6 +5,8 @@ class StaticPagesController < ApplicationController
   end
 
   def projects
+    @dollar = Currency.new(:usd, 42)
+    @euro = @dollar.convert(:eur)
   end
 
   def about

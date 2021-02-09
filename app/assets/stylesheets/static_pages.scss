@@ -69,6 +69,15 @@ h1 {
   padding: 1rem 0;
   margin: 5px;
 }
+.nav-item {
+  padding: 5px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px;
+}
+.nav-item:hover {
+  transform: scale(.9);
+}
 a {
   text-decoration: none;
   font-size: 1.1rem;
@@ -120,8 +129,8 @@ a:hover {
 .col-item {
   display: block;
   text-align: center;
-  // border: 1px solid black;
-  // border-radius: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
   padding: 1rem;
   margin: 1rem;
   max-width: 100%;
@@ -141,6 +150,7 @@ a:hover {
   }
   .nav-item {
     padding: 5px;
+    margin: 3px;
   }
   .col-item {
     margin: 1rem;
