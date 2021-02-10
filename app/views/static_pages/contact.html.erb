@@ -1,8 +1,8 @@
 <div class='nav'>
-  <div class='nav-item'><%= link_to 'Home', home_path %></div>
-  <div class='nav-item'><%= link_to 'Projects', projects_path %></div>
-  <div class='nav-item'><%= link_to 'About', about_path %></div>
-  <div class='nav-item'><%= link_to 'Contact Me', contact_path %></div>
+  <%= link_to 'Home', home_path, class: 'nav-item' %>
+  <%= link_to 'Projects', projects_path, class: 'nav-item' %>
+  <%= link_to 'About', about_path, class: 'nav-item' %>
+  <%= link_to 'Contact Me', contact_path, class: 'nav-item' %>
 </div>
 <div class='profile'>
   <div class='profile-pic-icons'>
@@ -19,12 +19,8 @@
   </div>
 </div>
 <div class='contact-container'>
-      <div>
-        <a href='mailto:whistler.5@osu.edu?subject=Mail From JordanWhistler.Info'>
+        <a href='mailto:whistler.5@osu.edu?subject=Mail From JordanWhistler.Info' class='nav-item'>
           <%= image_tag 'envelope.png', class: 'ico' %>Email Me</a>
-      </div>
-      <div>
-        <a href='tel:252-671-3879'>
+        <a href='tel:252-671-3879' class='nav-item' >
         <%= image_tag 'phone.png', class: 'ico' %>Call Me</a>
-      </div>
 </div>

@@ -1,8 +1,8 @@
 <div class='nav'>
-  <div class='nav-item'><%= link_to 'Home', home_path %></div>
-  <div class='nav-item'><%= link_to 'Projects', projects_path %></div>
-  <div class='nav-item'><%= link_to 'About', about_path %></div>
-  <div class='nav-item'><%= link_to 'Contact Me', contact_path %></div>
+  <%= link_to 'Home', home_path, class: 'nav-item' %>
+  <%= link_to 'Projects', projects_path, class: 'nav-item' %>
+  <%= link_to 'About', about_path, class: 'nav-item' %>
+  <%= link_to 'Contact Me', contact_path, class: 'nav-item' %>
 </div>
 <div class='profile'>
   <div class='profile-pic-icons'>
@@ -46,6 +46,21 @@
         <figcaption>Charting of user data included using Chartkick.js</figcaption>
       </figure>
     </div>
-
+    <div class='col-item'>
+      <h3>Command Line Games - Ruby</h3>
+      <h4><a href='https://github.com/JWhist/RB120/blob/master/Lesson%204/Hangman/hangman.rb' target='_blank'>Hangman</a></h4>
+      <p>An exercise in Object-Oriented Programming, using Ruby.  This is a small program
+      that uses separate dictionary and yaml files in tandem with a module and custom classes to creates
+      a simple hangman "guess the word" game.</p>
+      <figure>
+        <%= image_tag 'hang.png', class: 'chess-pic' %>
+      </figure>
+      <h4><a href='https://github.com/JWhist/RB120/blob/master/Lesson%205/oop_21.rb' target='_blank'>21</a></h4>
+      <p>A command line poker game created as an exercise in Object Oriented Programming.</p>
+      <figure>
+        <%= image_tag 'poker.png', class: 'chess-pic' %>
+        <figcaption>Early attempts at ASCII art!</figcaption>
+      </figure>
+    </div>
   </div>
 </div>
