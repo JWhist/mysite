@@ -121,6 +121,17 @@ a:hover {
   // border-radius: 5px;
   padding: 1rem;
   margin: 5px;
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .left-column {
   display: flex;
@@ -151,10 +162,13 @@ a:hover {
 }
 .contact-container {
   display: flex;
-  align-items: center;            //   media: cell phone
+  align-items: center;
   justify-content: space-around;
   padding: 1rem;
   margin: 5px;
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 @media screen and (max-width: 600px) {
