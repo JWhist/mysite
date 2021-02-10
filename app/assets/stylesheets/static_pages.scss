@@ -79,7 +79,7 @@ ul {
   padding: 5px;
   background-color: white;
   border-radius: 5px;
-  box-shadow: 0 5px 5px #c6c6c6;
+  box-shadow: 2px 5px 5px #696969;
 }
 .nav-item:hover {
   transform: scale(.9);
@@ -141,6 +141,7 @@ a:hover {
   text-align: center;
   border: 1px solid black;
   border-radius: 10px;
+  box-shadow: 5px 8px 8px #696969;
   padding: 1rem;
   margin: 1rem;
   max-width: 100%;
