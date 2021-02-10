@@ -83,6 +83,10 @@ ul {
 }
 .nav-item:hover {
   transform: scale(.9);
+  cursor: default;
+}
+.nav-item:focus {
+  cursor: default;
 }
 a {
   text-decoration: none;
