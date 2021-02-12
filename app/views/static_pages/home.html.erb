@@ -55,7 +55,27 @@
          returning the result in the currency of the users choice, without the user having to handle looking up rates or formatting of the output.  It currently has over 1,000 downloads.
       </p>
       <p>Test suite with 120+ test assertions using MiniTest was included in this simple gem.
-      <p>Currently, <b><%= @dollar %> = <%= "EUR #{@euro.value}" %></b></p>
+      <p>Currently, 
+      <form id='theForm' action="/convert" method='#'>
+        <input name='val' type='number' min='0.000' max='1000000.000' style='width: 5em' step='0.001' placeholder='1' required>
+        <label for='from_type'>Convert from:</label>
+        <select name='from_type' required>
+          <% @valid_types.each do |type| %>
+            <option value='<%= type %>'><%= type %></option>
+          <% end %>
+        </select>
+        <label for='to_type'>Convert to:</label>
+        <select name='to_type' required>
+          <% @valid_types.each do |type| %>
+            <option value='<%= type %>'><%= type %></option>
+          <% end %>
+        </select>
+        <button type='submit'>Convert</button>
+        <input name="authenticity_token" 
+               type="hidden" 
+               value="<%= form_authenticity_token %>"/>
+      </form>
+      <p id='result'>Enter a Conversion Above</p>
     </div>
 
     <div class='col-item'>

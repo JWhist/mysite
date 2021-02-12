@@ -1,17 +1,25 @@
 class StaticPagesController < ApplicationController
+
   def home
-    @dollar = Currency.new(:usd, 1)
-    @euro = @dollar.convert(:eur)
+    @valid_types = ["USD", "EUR", "JPY", "GBP", "AUD", "CAD", "CNY", "HKD", "NZD", "CHF"]
   end
 
   def projects
-    @dollar = Currency.new(:usd, 42)
-    @euro = @dollar.convert(:eur)
+
   end
 
   def about
   end
 
   def contact
+  end
+
+  def convert
+    from_type = params['from_type']
+    to_type = params['to_type']
+    val = params['val'].to_f
+    @in = Currency.new(from_type, val)
+    @out = @in.convert(to_type)
+    render partial: 'conversion', locals: {in_currency: @in, out_currency: @out}, layout: false
   end
 end
