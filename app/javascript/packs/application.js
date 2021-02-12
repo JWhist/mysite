@@ -35,5 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     request.addEventListener('load', callback);
     request.send(JSON.stringify(object));
+    form.reset();
   })
 });
