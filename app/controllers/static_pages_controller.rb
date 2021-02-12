@@ -5,7 +5,7 @@ class StaticPagesController < ApplicationController
   end
 
   def projects
-
+    @valid_types = ["USD", "EUR", "JPY", "GBP", "AUD", "CAD", "CNY", "HKD", "NZD", "CHF"]
   end
 
   def about
