@@ -54,9 +54,8 @@
          currency objects using an API to interact with ExchangeRatesAPI.  It can translate one currency to another, and do math directly between different currencies, 
          returning the result in the currency of the users choice, without the user having to handle looking up rates or formatting of the output.  It currently has over 1,000 downloads.
       </p>
-      <p>Test suite with 120+ test assertions using MiniTest was included in this simple gem.
-      <p>Currently, 
-      <form id='theForm' action="/convert" method='#'>
+      <p>Test suite with 120+ test assertions using MiniTest was included in this simple gem.</p>
+      <form id='theForm' action="/convert" method='post'>
         <input name='val' type='number' min='0.000' max='1000000.000' style='width: 5em' step='0.001' placeholder='1' required>
         <label for='from_type'>Convert from:</label>
         <select name='from_type' required>
